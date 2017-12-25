@@ -88,6 +88,45 @@
             android:inputType="number"
             android:textColorLink="@android:color/background_dark" />
 
+        <TextView
+            android:id="@+id/dTimeCiTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Time(Days)"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/dTimeCiET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textColorLink="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/nTimesTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:text="Number of Times"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/nTimesET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textColorLink="@android:color/background_dark" />
+
+        <Button
+            android:id="@+id/calcCiB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Calculate" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
 
