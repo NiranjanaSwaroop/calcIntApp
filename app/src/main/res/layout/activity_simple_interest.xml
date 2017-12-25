@@ -38,7 +38,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number|numberDecimal" />
+            android:inputType="number|numberDecimal"
+            android:textColorLink="@android:color/background_dark" />
 
         <TextView
             android:id="@+id/rateTV"
@@ -53,7 +54,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number|numberDecimal" />
+            android:inputType="number|numberDecimal"
+            android:textColorLink="@android:color/background_dark" />
 
         <TextView
             android:id="@+id/yTimeTV"
@@ -68,7 +70,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textColorLink="@android:color/background_dark" />
 
         <TextView
             android:id="@+id/mTimeTV"
@@ -83,7 +86,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textColorLink="@android:color/background_dark" />
 
         <TextView
             android:id="@+id/dTimeTV"
@@ -94,11 +98,12 @@
             android:textColor="@android:color/background_light" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/dTimeET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textColorLink="@android:color/background_dark" />
 
         <Button
             android:id="@+id/calculateSiB"
