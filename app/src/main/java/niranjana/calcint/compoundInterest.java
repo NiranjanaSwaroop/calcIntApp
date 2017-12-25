@@ -2,6 +2,7 @@ package niranjana.calcint;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class compoundInterest extends AppCompatActivity {
 
@@ -9,5 +10,8 @@ public class compoundInterest extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compound_interest);
+    }
+    public void calcCi(View view){
+        System.out.println("The compound interest is !");
     }
 }

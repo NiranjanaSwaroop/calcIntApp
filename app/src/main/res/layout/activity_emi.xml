@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -17,7 +20,8 @@
             android:layout_height="wrap_content"
             android:background="@android:color/holo_blue_bright"
             android:shadowColor="@android:color/background_dark"
-            android:text="Amount borrowed" />
+            android:text="Amount borrowed"
+            android:textColor="@android:color/background_dark" />
 
         <EditText
             android:id="@+id/amountET"
@@ -26,5 +30,46 @@
             android:ems="10"
             android:inputType="numberDecimal"
             android:textColorLink="@android:color/black" />
+
+        <TextView
+            android:id="@+id/rateEmiTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Rate of Interest per annum %"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/rateEmiET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColorLink="@android:color/black" />
+
+        <TextView
+            android:id="@+id/timeEmiTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:text="Number of Months"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/timeEmiET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textColorLink="@android:color/background_dark" />
+
+        <Button
+            android:id="@+id/calcEmiB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Calculate"
+            android:textColor="@android:color/background_dark" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
+</ScrollView>
