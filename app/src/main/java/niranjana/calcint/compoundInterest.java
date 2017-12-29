@@ -11,7 +11,7 @@ public class compoundInterest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compound_interest);
     }
-    public void calcCi(View view){
+    public void calculateCi(View view){
         System.out.println("The compound interest is !");
     }
 }

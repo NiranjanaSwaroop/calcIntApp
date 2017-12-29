@@ -39,6 +39,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number|numberDecimal"
+            android:text="0"
             android:textColorLink="@android:color/background_dark" />
 
         <TextView
@@ -55,6 +56,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number|numberDecimal"
+            android:text="0"
             android:textColorLink="@android:color/background_dark" />
 
         <TextView
@@ -71,6 +73,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
+            android:text="0"
             android:textColorLink="@android:color/background_dark" />
 
         <TextView
@@ -87,6 +90,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
+            android:text="0"
             android:textColorLink="@android:color/background_dark" />
 
         <TextView
@@ -103,6 +107,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
+            android:text="0"
             android:textColorLink="@android:color/background_dark" />
 
         <Button
@@ -110,7 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/darker_gray"
-            android:onClick="calcSi"
+            android:onClick="calculateSi"
             android:text="Calculate"
             android:textColor="@android:color/background_light" />
     </LinearLayout>

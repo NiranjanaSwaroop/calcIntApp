@@ -38,6 +38,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number|numberDecimal"
+            android:text="0"
             android:textColorLink="@android:color/background_dark" />
 
         <TextView
@@ -51,9 +52,10 @@
         <EditText
             android:id="@+id/rateCiET"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
+            android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number|numberDecimal"
+            android:text="0"
             android:textColorLink="@android:color/background_dark" />
 
         <TextView
@@ -70,6 +72,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
+            android:text="0"
             android:textColorLink="@android:color/background_dark" />
 
         <TextView
@@ -86,6 +89,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
+            android:text="0"
             android:textColorLink="@android:color/background_dark" />
 
         <TextView
@@ -102,6 +106,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
+            android:text="0"
             android:textColorLink="@android:color/background_dark" />
 
         <TextView
@@ -118,6 +123,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
+            android:text="0"
             android:textColorLink="@android:color/background_dark" />
 
         <Button
@@ -125,7 +131,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/holo_blue_dark"
-            android:onClick="calcCi"
+            android:onClick="calculateCi"
             android:text="Calculate" />
 
     </LinearLayout>
