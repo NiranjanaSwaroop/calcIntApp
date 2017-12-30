@@ -110,6 +110,14 @@
             android:text="0"
             android:textColorLink="@android:color/background_dark" />
 
+        <CheckBox
+            android:id="@+id/roundSi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Round Off"
+            android:textColorLink="@android:color/background_dark" />
+
         <Button
             android:id="@+id/calculateSiB"
             android:layout_width="match_parent"

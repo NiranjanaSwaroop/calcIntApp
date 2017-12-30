@@ -3,6 +3,7 @@ package niranjana.calcint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -85,6 +86,7 @@ public class simpleInterest extends AppCompatActivity {
 
             String simpleInterestStr = Float.toString(simpeInterest);
             System.out.println(simpeInterest);
+//            CheckBox roundOff = findViewById(R.id);
             String message = "The simple interest is " + ceil(simpeInterest) + " .";
             Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
         }
