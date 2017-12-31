@@ -74,11 +74,19 @@
             android:text="0"
             android:textColorLink="@android:color/background_dark" />
 
+        <CheckBox
+            android:id="@+id/roundEmi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Round Off" />
+
         <Button
             android:id="@+id/calcEmiB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/holo_blue_dark"
+            android:onClick="calculateEmi"
             android:text="Calculate"
             android:textColor="@android:color/background_dark" />
     </LinearLayout>

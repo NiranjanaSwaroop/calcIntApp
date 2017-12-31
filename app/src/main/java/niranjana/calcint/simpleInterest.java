@@ -28,7 +28,7 @@ public class simpleInterest extends AppCompatActivity {
     }
     private void handleEmpty(EditText editText,String name){
 
-        String message = name + " is empty!!\nPlease fill proper data.";
+        String message = name + " is empty!!\nPlease fill with proper data.";
         Toast.makeText(getApplicationContext(),message,Toast.LENGTH_SHORT).show();
 
 
@@ -82,12 +82,15 @@ public class simpleInterest extends AppCompatActivity {
             float dTime = Float.parseFloat(dTimeET.getText().toString());
 
             float time = (float) (yTime + (mTime / 12.0) + (dTime / 365.0));
-            float simpeInterest = (float) ((principle * time * rate) / 100.0);
+            float simpleInterest = (float) ((principle * time * rate) / 100.0);
 
-            String simpleInterestStr = Float.toString(simpeInterest);
-            System.out.println(simpeInterest);
-//            CheckBox roundOff = findViewById(R.id);
-            String message = "The simple interest is " + ceil(simpeInterest) + " .";
+//            String simpleInterestStr = Float.toString(simpleInterest);
+            System.out.println(simpleInterest);
+            CheckBox roundOff = findViewById(R.id.roundSi);
+            if (roundOff.isChecked()){
+                simpleInterest = (float)ceil(simpleInterest);
+            }
+            String message = "The simple interest is " + simpleInterest + " .";
             Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
         }
     }

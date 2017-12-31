@@ -3,8 +3,14 @@ package niranjana.calcint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
+
+
+
+import static java.lang.Math.ceil;
+import static java.lang.Math.pow;
 
 public class compoundInterest extends AppCompatActivity {
 
@@ -21,7 +27,7 @@ public class compoundInterest extends AppCompatActivity {
         return true;
     }
     private void handleEmpty(EditText editText,String name){
-        String message = name + " is empty!!\nPlease fill proper data.";
+        String message = name + " is empty!!\nPlease fill with proper data.";
         Toast.makeText(getApplicationContext(),message,Toast.LENGTH_SHORT).show();
     }
     public void calculateCi(View view){
@@ -67,7 +73,16 @@ public class compoundInterest extends AppCompatActivity {
             float yTime = Float.parseFloat(yTimeET.getText().toString());
             float mTime = Float.parseFloat(mTimeET.getText().toString());
             float dTime = Float.parseFloat(dTimeET.getText().toString());
+            float time = yTime + (mTime/12.0f)+(dTime/365.0f);
             float numberOfTimes = Float.parseFloat(numberOfTimesET.getText().toString());
+
+            float compoundInterest = (principle*(float)pow((1+rate/numberOfTimes),(numberOfTimes*time)));
+            CheckBox roundOff = findViewById(R.id.roundCi);
+            if(roundOff.isChecked()){
+                compoundInterest = (float)ceil(compoundInterest);
+            }
+            String message = "The Compound Interest is "+compoundInterest+" .";
+            Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
         }
 
 
