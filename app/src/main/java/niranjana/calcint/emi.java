@@ -58,16 +58,18 @@ public class emi extends AppCompatActivity {
             float rate = ratePerAnnum/12.0f;
             rate = rate/100.0f;
             float months = Float.parseFloat(monthsEt.getText().toString());
-
+            float emi = 0.0f;
             CheckBox roundOff = findViewById(R.id.roundEmi);
 
-
-            float onePlusRate = rate + 1;
-            float fraction = (float) (pow(onePlusRate,months)/(pow(onePlusRate,months)-1.0f));
-            float emi =      (amount*rate)*fraction;
-            if(roundOff.isChecked()){
-                emi = (float)ceil(emi);
+            if(months != 0) {
+                float onePlusRate = rate + 1;
+                float fraction = (float) (pow(onePlusRate, months) / (pow(onePlusRate, months) - 1.0f));
+                emi = (amount * rate) * fraction;
             }
+            if (roundOff.isChecked()) {
+                emi = (float) ceil(emi);
+            }
+
             String message = "The EMI is "+emi+" .";
             Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
         }
